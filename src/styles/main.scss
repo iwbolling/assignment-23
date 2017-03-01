@@ -1,15 +1,73 @@
-*{
-	box-sizing: border-box;
+// IMPORTS - LIBRARIES
+@import "../../node_modules/bootstrap-sass/assets/stylesheets/_bootstrap.scss";
+
+// IMPORTS - FIXES
+@import "./clearfix";
+
+// STYLES - UNIVERSAL
+*{box-sizing: border-box}
+
+img {
+   width: 100%;
+   display: block;
 }
 
-body{
-	background: limegreen;
+
+#app-container {
+  font-family: 'Merriweather', serif;
 }
 
-$txt-color: maroon;
-
-h2{
-	color: $txt-color;
-	border-bottom: 4px solid $txt-color;
+.header {
+  // background-image: url("../../dist/images/Capitol_Building_Full_View.jpg");
+  // /* Image sourced from Wikipedia, credit to Noclip. Image is in the public domain. */
+  // background-size: cover;
+  // background-position: center;
+  // // background-repeat: no-repeat;
+  // color: #000000;
+  text-align: center;
 }
 
+.header h1{
+  background-color: rgba(255,255,255,.8);
+  font-size: 48px;
+  margin-bottom: 0;
+  padding: 8px;
+}
+
+.header h2{
+  background-color: rgba(255,255,255,.8);
+  margin-top: 0;
+  padding-bottom: 8px;
+}
+
+.all-legislators {
+  margin-left: 16px;
+  margin-right: 16px;
+}
+
+.legis-block {
+  background-color: #C8F7C5;
+  height: 240px;
+  margin-bottom: 30px;
+}
+
+.legis-block h3{
+  font-size: 20px;
+  margin: 12px;
+}
+
+.legis-block h4{
+  font-size: 16px;
+  margin: 12px;
+}
+
+.legis-block ul{
+  font-size: 14px;
+  margin: 12px;
+}
+
+.legis-block li{margin: 8px;}
+
+.legis-block p{
+  font-size: 12px;
+}
